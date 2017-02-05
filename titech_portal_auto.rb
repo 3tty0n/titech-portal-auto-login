@@ -38,7 +38,7 @@ p1 = driver.find_element(:name, 'message3')
 p2 = driver.find_element(:name, 'message4')
 p3 = driver.find_element(:name, 'message5')
 
-pass_value = [p1, p2, p3].zip(message_value).map { |item|
+[p1, p2, p3].zip(message_value).map { |item|
   p_value = get_password_value(item[1])
   item[0].send_keys(p_value)
 }
