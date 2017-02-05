@@ -43,5 +43,5 @@ $ touch env.rb
 # Usage
 
 ```sh
-$ make auto
+$ make login
 ```
