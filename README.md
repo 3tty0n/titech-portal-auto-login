@@ -25,8 +25,8 @@ $ touch env.rb
 -  put your environmental information for Tokyo Tech portal in `env.rb` as below.
 
 ```ruby
-@usr_name = YOUR_USER_NAME
-@usr_password = YOUR_PASSWORD
+@usr_name = 'YOUR_USER_NAME'
+@usr_password = 'YOUR_PASSWORD'
 @usr_matrix = {
   'A' => 'xxxxxxx',
   'B' => 'xxxxxxx',
