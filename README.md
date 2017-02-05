@@ -13,7 +13,7 @@ An auto login script for [TokyoTech Portal](http://portal.titech.ac.jp/) .
 $ make build
 ```
 
-# SetUp
+# Setup
 
 - make `env.rb`
 
@@ -21,7 +21,7 @@ $ make build
 $ touch env.rb
 ```
 
--  put your environmental information for tokyotech portal as below.
+-  put your environmental information for Tokyo Tech portal in `env.rb` as below.
 
 ```ruby
 @usr_name = YOUR_USER_NAME
