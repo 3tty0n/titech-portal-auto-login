@@ -6,6 +6,7 @@ An auto login script for [TokyoTech Portal](http://portal.titech.ac.jp/) .
 
 - firefox
 - [geckodriver](https://github.com/mozilla/geckodriver/releases)
+  - Please install it in `./vendor/bundle/ruby/2.3.0/bin`
 
 # Install
 
