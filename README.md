@@ -5,24 +5,36 @@ An auto login script for [TokyoTech Portal](http://portal.titech.ac.jp/) .
 # Requirement
 
 - firefox
-- [geckodriver](https://github.com/mozilla/geckodriver/releases)
-  - Please install it in `./vendor/bundle/ruby/2.3.0/bin`
 
 # Install
 
+## If you use macOS:
+
 ```sh
-$ make build
+$ make build.macos
+```
+
+## If you use linux64:
+
+```sh
+$ make build.linux64
+```
+
+## If you use win64:
+
+```sh
+$ make build.win64
 ```
 
 # Setup
 
-- make `env.rb`
+Create `env.rb`.
 
 ```sh
 $ touch env.rb
 ```
 
--  put your environmental information for Tokyo Tech portal in `env.rb` as below.
+Put your environmental information for Tokyo Tech portal in `env.rb` as below.
 
 ```ruby
 @usr_name = 'YOUR_USER_NAME'
