@@ -58,3 +58,14 @@ Put your environmental information for Tokyo Tech portal in `env.rb` as below.
 ```sh
 $ make login
 ```
+
+# Futher Option
+
+You can log in Tokyo Tech Portal by this command to create it:
+
+```sh
+$ vi /usr/local/bin/titech
+cd /path/to/titech-portal-auto-login
+make login
+$ titech
+```
