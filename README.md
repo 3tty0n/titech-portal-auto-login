@@ -8,7 +8,13 @@ An auto login script for [TokyoTech Portal](http://portal.titech.ac.jp/) .
 
 # Install
 
-If you use macOS:
+First:
+
+```sh
+$ make
+```
+
+Next, if you use macOS:
 
 ```sh
 $ make build.macos
