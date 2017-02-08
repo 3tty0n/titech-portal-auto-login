@@ -12,14 +12,6 @@ usr_pass.send_keys(@usr_password)
 
 sleep 3
 
-def find_element_by_xpath(path)
-  @driver.find_element(:xpath, path)
-end
-
-def find_element_by_name(name)
-  @driver.find_element(:name, name)
-end
-
 def get_password_value_from_message(message)
   @usr_matrix[message[0]][message[1] - 1]
 end
@@ -35,18 +27,17 @@ xpath_list = [
 ]
 
 pass_list = [
-  find_element_by_name('message3'),
-  find_element_by_name('message4'),
-  find_element_by_name('message5')
+  @driver.find_element(:name, 'message3'),
+  @driver.find_element(:name, 'message4'),
+  @driver.find_element(:name, 'message5')
 ]
 
 message_value = xpath_list.map { |e|
-  get_message_value_from_xpath(find_element_by_xpath(e))
+  get_message_value_from_xpath(@driver.find_element(:xpath, e))
 }
 
 pass_list.zip(message_value).map { |pass, message|
-  p_value = get_password_value_from_message(message)
-  pass.send_keys(p_value)
+  pass.send_keys(get_password_value_from_message(message))
 }
 
 @driver.find_element(:name, 'OK').click
