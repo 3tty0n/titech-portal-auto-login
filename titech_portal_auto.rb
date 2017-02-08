@@ -10,7 +10,7 @@ usr_pass = @driver.find_element(:name, 'usr_password')
 usr_pass.send_keys(@usr_password)
 @driver.find_element(:name, 'OK').click
 
-sleep 2
+sleep 3
 
 def find_element_by_xpath(path)
   @driver.find_element(:xpath, path)
