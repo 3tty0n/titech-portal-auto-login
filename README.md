@@ -65,7 +65,7 @@ Put your environmental information for Tokyo Tech portal in `env.rb` as below.
 $ make login
 ```
 
-# Futher Option
+# Further Option
 
 You can log in Tokyo Tech Portal by this command to create it:
 
