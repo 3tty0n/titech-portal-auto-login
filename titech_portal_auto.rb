@@ -1,5 +1,5 @@
 require 'selenium-webdriver'
-require './env.rb'
+require './restore.rb'
 
 @driver = Selenium::WebDriver.for :firefox
 
