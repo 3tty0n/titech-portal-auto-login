@@ -60,5 +60,6 @@ You can log in Tokyo Tech Portal by this command to create it:
 $ vi /usr/local/bin/titech
 cd /path/to/titech-portal-auto-login
 make login
+$ chmod +x /usr/local/bin/titech
 $ titech
 ```
