@@ -2,8 +2,9 @@ login:
 	bundle exec ruby titech_portal_auto.rb
 
 build:
+	gem install pit
 	rbenv exec gem install bundler
-	bundle install --path=vendor/bundle
+	rbenv exec bundle install --path=vendor/bundle
 
 build.macos:
 	wget https://github.com/mozilla/geckodriver/releases/download/v0.14.0/geckodriver-v0.14.0-macos.tar.gz && tar -xf geckodriver-v0.14.0-macos.tar.gz  && mv geckodriver ./vendor/bundle/ruby/2.3.0/bin/ && rm geckodriver-v0.14.0-macos.tar.gz

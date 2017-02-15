@@ -13,7 +13,7 @@ An auto login script for [TokyoTech Portal](http://portal.titech.ac.jp/) .
 First:
 
 ```sh
-$ make
+$ make build
 ```
 
 Next, if you use macOS:
