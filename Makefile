@@ -1,5 +1,5 @@
 login:
-	bundle exec ruby titech_portal_auto.rb
+	bundle exec ruby titech_portal_auto_login.rb
 
 build:
 	gem install pit
